@@ -36,7 +36,7 @@ public class ChessBoard {
                 System.out.println("|------|");
             }
             else {
-                System.out.println("|------|");
+                System.out.println("|------|------|------|------|------|------|------|------|");
                 System.out.println("|"+pieces[i]+"|");
                 System.out.println("|  "+colours[0]+"   |");
                 System.out.println("|------|");
