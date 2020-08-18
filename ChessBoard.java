@@ -56,3 +56,18 @@ public class ChessBoard {
 
     }
 }
+
+//Want a function that builds a chessbaord with correct pieces in correct starting positions
+//Initially have an array of all the pieces on a chess baord
+//Know that can only have x number of each piece on the baord
+//Know that a chessboard is an 8 by 8 thing
+
+//Will take the array of strings
+//check the name
+//if the name of the piece is 'Pawn'
+//it will place this entry into the second row
+
+//maybe need to construct empty board first?
+
+//create empty board
+//then ahve better index to use to place pieces correctly.
