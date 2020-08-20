@@ -10,49 +10,108 @@ public class ChessBoard {
 
     public void drawSquare(String piece, String colour) {
 
-        for(int i = 0; i <= 5; i++) {
-            if(pieces[i].length() == 4) {
-                if (pieces[i] == "Pawn") {
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                    System.out.println("| "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" |");
-                    System.out.println("|  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |");
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                }
-                else if(pieces[i] == "Rook") {
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                    System.out.println("| "+pieces[i]+" |      |      |      |      |      |      | "+pieces[i]+" |");
-                    System.out.println("|  "+colours[0]+"   |      |      |      |      |      |      |  "+colours[0]+"   |");
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                }
-                else {
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                    System.out.println("|      |      |      | "+pieces[i]+" |      |      |      |      |");
-                    System.out.println("|      |      |      |   "+colours[0]+"  |      |      |      |      |");
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                }
-            }
-            else if(pieces[i].length() == 5) {
-                System.out.println("|------|------|------|------|------|------|------|------|");
-                System.out.println("|      |      |      |      |"+pieces[i]+" |      |      |      |");
-                System.out.println("|      |      |      |      |  "+colours[0]+"   |      |      |      |");
-                System.out.println("|------|------|------|------|------|------|------|------|");;
-            }
-            else {
-                if(pieces[i] == "Bishop") {
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                    System.out.println("|      |      |"+pieces[i]+"|      |      |"+pieces[i]+"|      |      |");
-                    System.out.println("|      |      |  "+colours[0]+"   |      |      |  "+colours[0]+"   |      |      |");
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                }
-                else {
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                    System.out.println("|      |"+pieces[i]+"|      |      |      |      |"+pieces[i]+"|      |");
-                    System.out.println("|      |  "+colours[0]+"   |      |      |      |      |  "+colours[0]+"   |      |");
-                    System.out.println("|------|------|------|------|------|------|------|------|");
-                }
-            }
-        }
+        // for(int i = 0; i <= 5; i++) {
+        //     if(pieces[i].length() == 4) {
+        //         if (pieces[i] == "Pawn") {
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //             System.out.println("| "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" | "+pieces[i]+" |");
+        //             System.out.println("|  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |  "+colours[0]+"   |");
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //         }
+        //         else if(pieces[i] == "Rook") {
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //             System.out.println("| "+pieces[i]+" |      |      |      |      |      |      | "+pieces[i]+" |");
+        //             System.out.println("|  "+colours[0]+"   |      |      |      |      |      |      |  "+colours[0]+"   |");
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //         }
+        //         else {
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //             System.out.println("|      |      |      | "+pieces[i]+" |      |      |      |      |");
+        //             System.out.println("|      |      |      |   "+colours[0]+"  |      |      |      |      |");
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //         }
+        //     }
+        //     else if(pieces[i].length() == 5) {
+        //         System.out.println("|------|------|------|------|------|------|------|------|");
+        //         System.out.println("|      |      |      |      |"+pieces[i]+" |      |      |      |");
+        //         System.out.println("|      |      |      |      |  "+colours[0]+"   |      |      |      |");
+        //         System.out.println("|------|------|------|------|------|------|------|------|");;
+        //     }
+        //     else {
+        //         if(pieces[i] == "Bishop") {
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //             System.out.println("|      |      |"+pieces[i]+"|      |      |"+pieces[i]+"|      |      |");
+        //             System.out.println("|      |      |  "+colours[0]+"   |      |      |  "+colours[0]+"   |      |      |");
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //         }
+        //         else {
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //             System.out.println("|      |"+pieces[i]+"|      |      |      |      |"+pieces[i]+"|      |");
+        //             System.out.println("|      |  "+colours[0]+"   |      |      |      |      |  "+colours[0]+"   |      |");
+        //             System.out.println("|------|------|------|------|------|------|------|------|");
+        //         }
+        //     }
+        // }
 
+            String [] row1 = {"+------|------|------|------|------|------|------|------+",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row2 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row3 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row4 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row5 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row6 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row7 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            };
+            String [] row8 = {"|------|------|------|------|------|------|------|------|",
+            "|      |      |      |      |      |      |      |      |",
+            "|      |      |      |      |      |      |      |      |",
+            "+------|------|------|------|------|------|------|------+"
+            };
+
+            System.out.println(row1[0]);
+            System.out.println(row1[1]);
+            System.out.println(row1[2]);
+            System.out.println(row2[0]);
+            System.out.println(row2[1]);
+            System.out.println(row2[2]);
+            System.out.println(row3[0]);
+            System.out.println(row3[1]);
+            System.out.println(row3[2]);
+            System.out.println(row4[0]);
+            System.out.println(row4[1]);
+            System.out.println(row4[2]);
+            System.out.println(row5[0]);
+            System.out.println(row5[1]);
+            System.out.println(row5[2]);
+            System.out.println(row6[0]);
+            System.out.println(row6[1]);
+            System.out.println(row6[2]);
+            System.out.println(row7[0]);
+            System.out.println(row7[1]);
+            System.out.println(row7[2]);
+            System.out.println(row8[0]);
+            System.out.println(row8[1]);
+            System.out.println(row8[2]);
+            System.out.println(row8[3]);
 
     }
 }
