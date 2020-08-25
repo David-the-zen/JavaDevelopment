@@ -87,31 +87,39 @@ public class ChessBoard {
             "+------|------|------|------|------|------|------|------+"
             };
 
-            System.out.println(row1[0]);
-            System.out.println(row1[1]);
-            System.out.println(row1[2]);
-            System.out.println(row2[0]);
-            System.out.println(row2[1]);
-            System.out.println(row2[2]);
-            System.out.println(row3[0]);
-            System.out.println(row3[1]);
-            System.out.println(row3[2]);
-            System.out.println(row4[0]);
-            System.out.println(row4[1]);
-            System.out.println(row4[2]);
-            System.out.println(row5[0]);
-            System.out.println(row5[1]);
-            System.out.println(row5[2]);
-            System.out.println(row6[0]);
-            System.out.println(row6[1]);
-            System.out.println(row6[2]);
-            System.out.println(row7[0]);
-            System.out.println(row7[1]);
-            System.out.println(row7[2]);
-            System.out.println(row8[0]);
-            System.out.println(row8[1]);
-            System.out.println(row8[2]);
-            System.out.println(row8[3]);
+            //want to create an object that contains all of the rows?
+
+            for(int i = 0; i<8; i++) {
+
+            }
+
+            // System.out.println(row1[0]);
+            // System.out.println(row1[1]);
+            // System.out.println(row1[2]);
+            // System.out.println(row2[0]);
+            // System.out.println(row2[1]);
+            // System.out.println(row2[2]);
+            // System.out.println(row3[0]);
+            // System.out.println(row3[1]);
+            // System.out.println(row3[2]);
+            // System.out.println(row4[0]);
+            // System.out.println(row4[1]);
+            // System.out.println(row4[2]);
+            // System.out.println(row5[0]);
+            // System.out.println(row5[1]);
+            // System.out.println(row5[2]);
+            // System.out.println(row6[0]);
+            // System.out.println(row6[1]);
+            // System.out.println(row6[2]);
+            // System.out.println(row7[0]);
+            // System.out.println(row7[1]);
+            // System.out.println(row7[2]);
+            // System.out.println(row8[0]);
+            // System.out.println(row8[1]);
+            // System.out.println(row8[2]);
+            // System.out.println(row8[3]);
+
+
 
     }
 }
