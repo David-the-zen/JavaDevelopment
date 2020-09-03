@@ -3,10 +3,8 @@ public class ChessBoard {
         drawBoard("", "B");
     }
 
-    String[] pieces = {"Pawn", "Rook", "Knight", "Bishop", "King", "Queen"};
-    String[] colours = {"B", "W"};
-
-
+    pieces pieces = new pieces();
+    pieceColour colour = new pieceColour();
 
     public void drawBoard(String piece, String colour) {
         blankChessBoard blankChessBoard = new blankChessBoard();
