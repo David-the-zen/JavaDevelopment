@@ -11,7 +11,20 @@ public class ChessBoard {
     public void drawBoard(String piece, String colour) {
         blankChessBoard blankChessBoard = new blankChessBoard();
 
-        System.out.println(blankChessBoard.rowTop[0]);
+        constructRows(blankChessBoard.rowTop);
+        constructRows(blankChessBoard.rowMiddle);
+        constructRows(blankChessBoard.rowMiddle);
+        constructRows(blankChessBoard.rowMiddle);
+        constructRows(blankChessBoard.rowMiddle);
+        constructRows(blankChessBoard.rowMiddle);
+        constructRows(blankChessBoard.rowMiddle);
+        constructRows(blankChessBoard.rowBottom);
+    }
+
+    public void constructRows(String[] row) {
+        for(int i = 0; i<row.length; i++) {
+            System.out.println(row[i]);
+        }
     }
 }
 
