@@ -17,11 +17,22 @@ public class ChessBoard {
         constructRows(blankChessBoard.rowMiddle);
         constructRows(blankChessBoard.rowMiddle);
         constructRows(blankChessBoard.rowBottom);
+
+        //System.out.println(pieces.pieces[0]);
+
+        addPiece(pieces.pieces);
+
     }
 
     public void constructRows(String[] row) {
         for(int i = 0; i<row.length; i++) {
             System.out.println(row[i]);
+        }
+    }
+
+    public void addPiece(String[] pieces) {
+        for(int i = 0; i<pieces.length; i++) {
+            System.out.println(pieces[i]);
         }
     }
 }
