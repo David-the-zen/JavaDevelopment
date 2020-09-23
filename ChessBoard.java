@@ -18,8 +18,6 @@ public class ChessBoard {
         constructRows(blankChessBoard.rowMiddle);
         constructRows(blankChessBoard.rowBottom);
 
-        //System.out.println(pieces.pieces[0]);
-
         addPiece(pieces.pieces);
 
     }
@@ -32,7 +30,37 @@ public class ChessBoard {
 
     public void addPiece(String[] pieces) {
         for(int i = 0; i<pieces.length; i++) {
-            System.out.println(pieces[i]);
+            if(pieces[i].length() == 4) {
+                if(pieces[i] == "Pawn") {
+                    for(int e = 0; e<8; e++) {
+                        System.out.println(pieces[i]);
+                    }
+                }
+                else if(pieces[i] == "Rook") {
+                    for(int e = 0; e<2; e++) {
+                        System.out.println(pieces[i]);
+                    }
+                }
+                else{
+                    System.out.println(pieces[i]);
+                }
+            }
+            else if (pieces[i].length() == 5) {
+                System.out.println(pieces[i]);
+            }
+            else{
+                if(pieces[i] == "Bishop") {
+                    for(int e = 0; e<2; e++) {
+                        System.out.println(pieces[i]);
+                    }
+                }
+                else {
+                    for(int e = 0; e<2; e++) {
+                        System.out.println(pieces[i]);
+                    }
+                }
+            }
+            //System.out.println(pieces[i]);
         }
     }
 }
